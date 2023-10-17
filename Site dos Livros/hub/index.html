@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dramaventura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+        <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Mangá</a>
+            </li>
+        
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">HQ-Histórias em Quadrinhos</a>
+            </li>
+            
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Livros</a>
+            </li>
+            
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Coletania</a>
+            </li>  
+
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Poema</a>
+            </li>
+        </ul>
+
+            <img src="img/Logo.svg" alt="Logo da biblioteca" class="container__imagem">
+        </div>
+        <h1 style="font-size: 50px;">Dramaventura</h1>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Emprestimos.svg" alt="Meus emprestimos" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">O que você procura?</h2>
+        <p class="banner__texto"> Encontre em nossa estante o que você precisa para seu entreterimento!</p>
+        <input type="search" placeholder="Qual será sua próxima Aventura?" class="banner__pesquisa"> 
+
+
+
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><a href="file:///C:/Users/55429/Downloads/Site%20dos%20Livros/hub/tokyorevangers/tokyorevangers.html"><img alt="Tokyo_Revangers" src="https://th.bing.com/th/id/R.4cce47fe257d5f32e3e7103d7f94984b?rik=drdmdk8Oycp4Pw&pid=ImgRaw&r=0" decoding="async" width="220" height="270" ></a></div>
+      <div class="swiper-slide"><a href="file:///C:/Users/55429/Downloads/Site%20dos%20Livros/hub/OrdemParanormal/OrdemParanormal.html"><img alt="HQ_Ordem_Paranormal" src="C:\Users\55429\Downloads\Site dos Livros\img livros\Capa dos Livros\HQ_Ordem.jpeg" decoding="async" width="220" height="270"></a></div>
+      <div class="swiper-slide"><img alt="Diario_3" src="https://th.bing.com/th/id/R.a0c453df9f1dda2d8b96fd774e4b59dc?rik=N%2b9MBNH0gHEZ1g&pid=ImgRaw&r=0" decoding="async" width="220" height="270"></div>
+      <div class="swiper-slide"><a href="file:///C:/Users/55429/Downloads/Site%20dos%20Livros/hub/DivinaCom%C3%A9dia/Inferno.html"><img alt="Inferno_de_Dante" src="https://th.bing.com/th/id/R.c7fdf3b0d8c769f0fed7963870c2ffc2?rik=Ke81%2bxREvdCfMw&pid=ImgRaw&r=0" decoding="async" width="220" height="270"></a></div>
+      <div class="swiper-slide"><img alt="Purgatório"src="C:\Users\55429\Downloads\Site dos Livros\img livros\Capa dos Livros\Purgatório.jpg" decoding="async" width="220" height="270"></div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+
+  </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+        });
+    </script>
+    
+</body>
+</html>

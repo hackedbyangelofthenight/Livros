@@ -1,0 +1,27 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+
+:root{
+    --cor-de-fundo:#000000;
+    --branco:#ffffff;
+    --amarelo:#ebdb02;
+    --roxo:#420664;
+    --fonte-principal: "Poppins";
+    --preto: #000000;
+    --vermelho-escuro:#610a0a;
+    --vermelho:#bd0303;
+    --roxo-degrade: linear-gradient(97.54deg, #420664 14.15%, #002F52 145.49%);
+    --verde: #11a11d;
+    --cinza: #363636;
+    
+
+}
+
+
+body{
+    background-color:var(--cor-de-fundo);
+font-family: var(--fonte-principal);
+font-size: 16px;
+font-weight: 400;
+}
